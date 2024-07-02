@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    
+</body>
+<footer>
+    <script>
+        function changeBackgroundColor() {
+            const body = document.body;
+            const colors = ['red', 'green', 'blue', 'yellow'];  // Array of colors to cycle through
+          
+            // Generate a random index to pick a color from the array
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            const newColor = colors[randomIndex];
+          
+            body.style.backgroundColor = newColor;
+          }
+          
+          // Call the function initially to set a starting color
+          changeBackgroundColor();
+          
+          // Call the function repeatedly every 3 seconds using setInterval
+          setInterval(changeBackgroundColor, 3000);
+    </script>
+</footer>
+</html>
